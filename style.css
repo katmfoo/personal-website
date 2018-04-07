@@ -1,0 +1,133 @@
+
+/* Global */
+
+@font-face {
+  font-family: 'Droid Serif';
+  src: url(droid_serif.woff2);
+}
+
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: italic;
+  src: url(droid_serif_italic.woff2);
+}
+
+@font-face {
+  font-family: 'Retina Book';
+  src: url(retina_book.woff2);
+}
+
+@font-face {
+  font-family: 'Retina Bold';
+  src: url(retina_bold.woff2);
+}
+
+body {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: 'Droid Serif', serif;
+  font-size: 15px;
+  margin: 20px;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 27px;
+}
+
+h1, h2 {
+  font-family: 'Retina Bold', sans-serif;
+  font-weight: normal;
+}
+
+a {
+  color: #6699CC;
+  font-style: italic;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+div.container {
+  margin: 0 auto;
+  max-width: 500px;
+  min-height: calc(100vh - 175px); /* for sticky footer */
+}
+
+/* Header */
+
+div.header {
+  display: flex;
+  margin: 50px 0;
+}
+
+div.header div.left {
+  padding-left: 20px;
+}
+
+div.header div.left img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+div.header div.right {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+div.header div.right h1.title {
+  margin: 23px 0 0 0;
+}
+
+div.header div.right p.subtitle {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: 'Retina Book', sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+div.header div.right p.subtitle svg {
+  position: relative;
+  top: 5px;
+  width: 20px;
+}
+
+/* Navigation */
+
+div.navigation {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+div.navigation a {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: 'Retina Book', sans-serif;
+  font-style: normal;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+div.navigation a:hover {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* Body */
+
+div.body {
+  margin: 50px 0;
+}
+
+/* Footer */
+
+div.footer {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: 'Retina Book', sans-serif;
+  height: 25px;
+  margin: 50px auto 50px auto;
+  max-width: 500px;
+  text-transform: uppercase;
+}
