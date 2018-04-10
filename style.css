@@ -52,14 +52,14 @@ a:hover {
 div.container {
   margin: 0 auto;
   max-width: 500px;
-  min-height: calc(100vh - 175px); /* for sticky footer */
+  min-height: calc(100vh - 145px); /* for sticky footer */
 }
 
 /* Header */
 
 div.header {
   display: flex;
-  margin: 50px 0;
+  margin: 50px 0 20px 0;
 }
 
 div.header div.left {
@@ -84,7 +84,6 @@ div.header div.right p.subtitle {
   color: rgba(0, 0, 0, 0.4);
   font-family: 'Retina Book', sans-serif;
   margin: 0;
-  text-transform: uppercase;
 }
 
 div.header div.right p.subtitle svg {
@@ -98,7 +97,7 @@ div.header div.right p.subtitle svg {
 div.navigation {
   display: flex;
   justify-content: space-around;
-  margin: 50px 0;
+  margin: 20px 0 50px 0;
 }
 
 div.navigation a {
@@ -121,13 +120,24 @@ div.body {
   margin: 50px 0;
 }
 
+div.body img {
+  width: 100%;
+}
+
 /* Footer */
 
 div.footer {
   color: rgba(0, 0, 0, 0.4);
   font-family: 'Retina Book', sans-serif;
   height: 25px;
-  margin: 50px auto 50px auto;
+  margin: 50px auto 20px auto;
   max-width: 500px;
-  text-transform: uppercase;
+}
+
+div.footer div.right {
+  float: right;
+}
+
+div.footer div.right a {
+  color: rgba(0, 0, 0, 0.4);
 }
